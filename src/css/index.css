@@ -255,15 +255,17 @@ header nav span {
     margin: auto;
     height: 100vh;
     color: #fff;
+    text-align: center;
 }
 
 .lado-hero{
-    width: 45%;
+    width: 50%;
     padding: 1rem;
     margin: 0rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
 
 }
 
@@ -272,9 +274,10 @@ header nav span {
     -webkit-text-stroke: 2px #fff;
 }
 
-.lado-hero img{
-    width: 100%;
+.lado-hero .btn{
+    margin: auto;
 }
+
 
 /* SOLUÇÃO */
 
@@ -998,6 +1001,7 @@ header nav span {
 
     .intro-padrao {
         margin-bottom: 35px;
+        padding: 0 30px;
     }
 
     .intro-padrao .desc {
