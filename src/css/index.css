@@ -11,6 +11,24 @@
     --fonte-titulo: "Schibsted Grotesk", sans-serif;
 }
 
+
+
+#solucao {
+    scroll-margin-top: 100px;
+}
+#publico {
+    scroll-margin-top: 100px;
+}
+#galeria {
+    scroll-margin-top: 80px;
+}
+#equipe {
+    scroll-margin-top: 100px;
+}
+#contato {
+    scroll-margin-top: 80px;
+}
+
 img{
     object-fit: cover;
 }
@@ -205,7 +223,7 @@ header nav span {
 }
 
 .menu-hamburguer span {
-    background-color: var(--laranja);
+    background-color: #fff;
     border-radius: 10px;
     transition: 0.3s;
     height: 30px;
@@ -715,47 +733,52 @@ header nav span {
 
 
 
+/* RESPONSIVIDADE */
 
+.menu-hamburguer {
+    display: none;
+}
 
-
-/* responsividade */
 @media (max-width: 768px) {
+
+    /* HEADER */
     header {
         position: relative;
-    }
-
-    #nossos-cookies {
-        display: none !important;
+        background-color: var(--azul-escuro);
+        justify-content: flex-end;
+        padding: 15px 5%;
+        transition: all .4s ease;
+        box-sizing: border-box;
     }
 
     .menu-hamburguer {
         display: flex;
         flex-direction: column;
-        position: relative;
-        z-index: 1002;
         justify-content: space-around;
         width: 30px;
         height: 25px;
         cursor: pointer;
-        z-index: 1000;
+        z-index: 1002;
         gap: 3px;
     }
 
     .menu-hamburguer span {
-        background-color: var(--amarelo);
+        display: block;
+        width: 100%;
+        height: 5px;
         border-radius: 10px;
+        background-color: #fff;
         transition: 0.3s;
-        height: 30px;
-        width: 1005;
     }
 
     nav {
         display: none !important;
         position: absolute;
-        top: 80px;
+        top: 100%;
         left: 0;
         width: 100%;
-        background: var(--creme);
+        box-sizing: border-box;
+        background: var(--azul-escuro);
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -765,14 +788,14 @@ header nav span {
     /*força a exibição quando tiver a classe active*/
     nav.active {
         display: flex !important;
-        padding: 0;
     }
 
     nav .nav-list {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
+
 
     /* transformar em X */
     .open span:nth-child(1) {
@@ -787,21 +810,186 @@ header nav span {
         transform: rotate(-45deg) translate(10px, -10px);
     }
 
+
+
+
+
+
+
+
+
+
+
+    /* HERO */
+
+    .hero-content {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 20px 60px;
+        box-sizing: border-box;
+    }
+
+    .lado-hero {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* tira a imagem do hero no mobile */
+    .hero .lado-hero:nth-child(2) {
+        display: none;
+    }
+
+
+    /* SOLUÇÃO */
+
+    .solucao {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 40px 20px;
+    }
+
+    .bloco {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bloco .bloco-imagem {
+        order: 1;
+    }
+
+    .bloco .bloco-texto {
+        order: 2;
+    }
+
+
+    /* PÚBLICO-ALVO */
+
+    .texto-publico {
+        width: 90%;
+        font-size: 22px;
+    }
+
+    /* tira as imagens do público-alvo */
+    .imgs-publico {
+        display: none;
+    }
+
+
+    /* GALERIA */
+
+    .imgs-galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgs-galeria .aux {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imgs-galeria img {
+        width: 45%;
+        max-width: 250px;
+    }
+
+
+    /* EQUIPE */
+
+    .equipe-content {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .card-equipe {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+
+    /* CONTATO */
+
+    .contato {
+        width: 92%;
+        max-width: none;
+        grid-template-columns: 1fr;
+    }
+
+    .contato .form-lado {
+        padding: 40px 24px;
+        box-sizing: border-box;
+    }
+
+    .contato .info-lado {
+        margin: 0;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        max-width: 100%;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-links a {
+        margin: 0 auto;
+    }
 }
 
 
-#solucao {
-    scroll-margin-top: 100px;
-}
-#publico {
-    scroll-margin-top: 100px;
-}
-#galeria {
-    scroll-margin-top: 80px;
-}
-#equipe {
-    scroll-margin-top: 100px;
-}
-#contato {
-    scroll-margin-top: 80px;
+/* TELAS PEQUENAS */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: clamp(2.5rem, 15vw, 4rem);
+    }
+
+    .hero-content {
+        padding: 80px 15px 40px;
+    }
+
+    .lado-hero {
+        padding: 1rem 0.5rem;
+    }
+
+    .intro-padrao {
+        margin-bottom: 35px;
+    }
+
+    .intro-padrao .desc {
+        font-size: 14px;
+    }
+
+    .bloco {
+        gap: 15px;
+    }
+
+    .imgs-galeria .aux {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgs-galeria img {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .contato {
+        width: 94%;
+    }
 }
