@@ -55,7 +55,7 @@ h1{
 }
 
 h2{
-    font-size: clamp(1.2rem, 2vw, 3rem);
+    font-size: clamp(1.2rem, 1.2vw, 3rem);
     font-family: "raleway", sans-serif;
     font-weight: 500;
 }
@@ -101,7 +101,7 @@ main {
     font-weight: 600;
     border-radius: 15px;
     transition: 0.3s ease;
-    max-width: 100px;
+    max-width: 250px;
     text-align: center;
 }
 
@@ -123,6 +123,7 @@ button{
 
 .intro-padrao .titulo {
     font-weight: 700;
+    font-size: 30px;
     color: var(--azul-escuro);
     margin: 0 0 14px;
 }
@@ -245,6 +246,7 @@ header nav span {
 .hero{
     background: var(--azul-escuro);
     background: linear-gradient(159deg,rgba(6, 16, 59, 1) 0%, rgba(11, 28, 98, 1) 39%, rgba(30, 70, 231, 1) 100%);
+    width: 100%;
 }
 
 .hero-content{
@@ -308,7 +310,7 @@ header nav span {
 
 .bloco-imagem {
     width: 100%;
-    aspect-ratio: 4 / 2.5;
+    aspect-ratio: 4 / 3;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -377,6 +379,33 @@ header nav span {
     line-height: 1.5;
     margin: auto;
     font-size: 35px;
+    color: #71717a;
+}
+
+.persona{
+    background-color: var(--azul);
+    color: #fff;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60%;
+    margin: 3rem auto;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+.titulo-persona{
+    color: var(--verde);
+    font-weight: 800;
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+}
+
+.nome-persona{
+    padding-bottom: 100px;
+}
+
+.texto-persona{
+    font-weight: 400;
 }
 
 .imgs-publico{

@@ -2,7 +2,7 @@
 
 
 
-🌐 **Link do Site no ar (GitHub Pages):** https://deploy-divas.github.io/
+🌐 **Link do Site no ar (GitHub Pages):** https://deploy-divas.github.io/sprint3-frontend/
 
 
 ### 👥 Equipe Desenvolvedora (Grupo da Challenge)
