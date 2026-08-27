@@ -61,14 +61,14 @@
 
         <section id="solucao" class="solucao">
   
-            <div class="solucao-topo">
-                <h2 class="solucao-titulo">A solução</h2>
-                <p class="solucao-intro">
+            <div class="solucao-topo intro-padrao">
+                <h2 class="titulo">A solução</h2>
+                <p class="desc">
                     Texto de apresentação do desafio (challenge) que motivou o projeto — contexto, quem propôs e por que esse tema é relevante para a equipe.
                 </p>
             </div>
 
-            <div class="bloco problema">
+            <div class="bloco b-problema">
                 <div class="bloco-texto">
                     <div class="bloco-tag p">
                         <!-- Ícone Alerta (triângulo com exclamação) -->
@@ -84,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="bloco solucao">
+            <div class="bloco b-solucao">
                 <div class="bloco-imagem">
                     <img src="./src/assets/img-solucao.png" alt="Estudando tirando foto do conteudo">
                 </div>
@@ -103,11 +103,67 @@
 
         </section>
 
-        <section id="publico" class="publico"></section>
+        <section id="publico" class="publico">
 
-        <section id="galeria" class="galeria"></section>
+            <div class="publico-topo intro-padrao">
+                <h2 class="titulo">Público-Alvo</h2>
+                <p class="desc">
+                    Texto de apresentação do desafio (challenge) que motivou o projeto.
+                </p>
+            </div>
+
+            <div class="texto-publico">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti nisi sint assumenda! Eveniet iste praesentium fugit modi neque commodi culpa? Ea officia impedit maiores qui deserunt magni iste quisquam nostrum eveniet molestias eius recusandae in ipsa aliquid eum laboriosam, asperiores sed animi voluptatum accusamus illum alias explicabo quidem cum. Sapiente, non. Provident vero exercitationem dolorum eligendi, hic numquam ex, similique, facere iusto dolore quidem quo placeat. Atque eaque architecto est rerum assumenda provident ratione veniam aspernatur magni. Nemo ipsum quam, obcaecati nam eaque qui itaque totam perferendis hic voluptate reprehenderit ipsa consequuntur deleniti sapiente impedit veritatis quisquam quidem incidunt.</p>
+            </div>
+
+            <div class="imgs-publico flex-row">
+                <img src="./src/assets/img-problema.png" alt="">
+                <img src="./src/assets/img-problema.png" alt="">
+                <img src="./src/assets/img-problema.png" alt="">
+                <img src="./src/assets/img-problema.png" alt="">
+                <img src="./src/assets/img-problema.png" alt="">
+
+            </div>
+
+        </section>
+
+        <section id="galeria" class="galeria">
+
+            <div class="galeria-topo intro-padrao">
+                <h2 class="titulo">Galeria</h2>
+                <p class="desc">
+                    Texto de apresentação do desafio (challenge) que motivou o projeto — contexto, quem propôs e por que esse tema é relevante para a equipe.
+                </p>
+            </div>
+
+            <div class="galeria-content">
+                <div class="imgs-galeria flex-row">
+                    <div class="aux flex-row">
+                        <img src="./src/assets/prototipo1.png" alt="Primeira tela do prototipo">
+                        <img src="./src/assets/prototipo2.png" alt="Segunda tela do prototipo">
+                    </div>
+                    
+                    <div class="aux flex-row">
+                        <img src="./src/assets/prototipo3.png" alt="Terceira tela do prototipo">
+                        <img src="./src/assets/prototipo4.png" alt="Quarta tela do prototipo">
+                    </div>
+                </div>
+
+                <div class="link-galeria">
+                    <a href="https://deploy-divas.github.io/challenge-jovi/">Acesse aqui para a experiência completa</a>
+                </div>
+            </div>
+
+        </section>
         
         <section id="equipe" class="equipe">
+
+            <div class="equipe-topo intro-padrao">
+                <h2 class="titulo">Equipe</h2>
+                <p class="desc">
+                    Conheça quem está por trás do projeto!
+                </p>
+            </div>
 
             <div class="equipe-content flex-row">
 
@@ -186,24 +242,24 @@
                 <h2 class="titulo">Fale conosco</h2>
                 <p class="descricao">Envie-nos uma mensagem, responderemos assim que possível!</p>
 
-                <form>
+                <form id="form">
                     <div class="campo">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome">
+                        <input type="text" id="nome" required>
                     </div>
                     <div class="campo">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </div>
                     <div class="campo">
                         <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone">
+                        <input type="tel" id="telefone" required>
                     </div>
                     <div class="campo">
                         <label for="mensagem">Mensagem</label>
-                        <input type="text" id="mensagem">
+                        <input type="text" id="mensagem" required>
                     </div>
-                    <a class="btn btn-contato" onclick="contato()">Enviar Mensagem</a>
+                    <button type="submit" class="btn btn-contato" onclick="contato()">Enviar Mensagem</button>
                 </form>
             </div>
 

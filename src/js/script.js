@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //hero
-
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
@@ -26,3 +25,16 @@ window.addEventListener("scroll", () => {
         header.classList.remove("com-cor");
     }
 });
+
+
+//contato
+
+const form = document.getElementById("form"); 
+
+
+function contato(){
+    if (form.checkValidity()){
+        const nome = document.getElementById("nome").value; 
+        alert(`Obrigada por nos contatar, ${nome}! Sua mensagem foi enviada e será respondida assim que possivel`)
+    }
+}
